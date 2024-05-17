@@ -60,15 +60,24 @@ nav ul li{
 .about-container{
     justify-content: space-between;
     display: flex;
+    animation:fadeIn 3s forwards;
 }
-.about-col-1-img{
-    height:600px;
+/* .about-col-1-img{
+    height:450px;
+    padding-left: 50px;
 }
 .about-col-2{
     color:white;
     margin-top:100px;
     align-items: center;
-    width:60%
+    width:60%; */
+/* } */
+.about-col-1-img{
+    height:450px;
+}
+.about-col-2{
+    color:white;
+    align-items: center;
 }
 
 .tab-titles{
