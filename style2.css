@@ -1,7 +1,7 @@
 
 body{
     background-color: #000;
-    font-family:'Poppins',sans-serif;
+    font-family:cursive
 }
 .logo{
     height:100px;
@@ -44,6 +44,14 @@ nav ul li{
 }
 .home-body{
     animation:fadein 3s forwards;
+}
+.intro{
+    background: linear-gradient(to right,
+    Blue,
+    
+    green
+    
+    );
 }
 @keyframes fadein{
     from{
