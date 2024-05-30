@@ -80,6 +80,7 @@ nav ul li{
     align-items: center;
     width:60%; */
 /* } */
+
 .about-col-1-img{
     height:450px;
 }
@@ -87,15 +88,24 @@ nav ul li{
     color:white;
     align-items: center;
 }
-
-.tab-titles{
-    display: flex;
-    margin:20px 0 40px;
+.tab-titles a{
+    color: white;
+    text-decoration: none;
+    margin:20px ;
 }
-.tab-links{
-    margin-right: 60px;
-    font-size:18px;
-    font-weight:500 ;
-    cursor:pointer;
-    position: relative;
+.tab-titles div{
+    display: none;
+}
+.tab-titles div:target{
+    display: block;
+}
+
+
+/* ------------Contact-----------*/
+.contact-left{
+    color: white;
+}
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
 }
