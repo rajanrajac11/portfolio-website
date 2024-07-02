@@ -52,8 +52,8 @@ nav{
     font-size: 40px;
     text-decoration: none;
     margin: 0ch;
-    
 }
+
 .logo a:hover{
     font-size: 45px;
     
@@ -103,6 +103,7 @@ i{
     margin-top: 10px;
     height: 400px;
     border-radius: 100px;
+    transition: .5s;
 }
 
 /*------------ About Section  CSS--------------*/
@@ -198,6 +199,10 @@ i{
 .projects-box{
     padding: 10px;
     background-color: rgb(109, 129, 37);
+    transition: 1s;
+}
+.projects-box img:hover{
+    transform:scale(1.1);
 }
 .projects-wrapper .todoList img{
     height: 175px;
