@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="mini-projects-style/11-todo-list.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h3>TODO List</h3>
+
+      <div class="todo-input-grid">
+        <div class="SN">SN</div>
+        <input
+          type="text"
+          name=""
+          id="js-input-list"
+          placeholder="Enter todo name"
+          autocomplete="off"
+          class="name-input"
+          required
+        />
+
+        <input type="date" name="" id="js-due-date" class="due-date-input" />
+
+        <button onclick="addArray()" class="add-button">Add</button>
+      </div>
+
+      <div class="displayList todo-grid"></div>
+    </div>
+  </body>
+  <script src="mini-projects-scripts/11-todo-list.js"></script>
+</html>

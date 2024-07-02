@@ -1,0 +1,84 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color:black;
+}
+
+button{
+    padding: 4px;
+    width: 100px;
+    border: 0.5px solid rgb(216, 214, 214);
+}
+.add-button{
+    background-color: rgb(116, 206, 27);
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.add-button:hover{
+    background-color: rgb(134, 235, 34);
+}
+.delete-button{
+    background-color: rgb(199, 36, 36);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    
+}
+.delete-button:hover{
+    background-color: rgb(255, 0, 0)
+}
+.todo-grid , .todo-input-grid{
+    display: grid;
+    grid-template-columns:auto 200px 150px 100px;
+    
+    row-gap: 10px;
+    align-items: center;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+
+}
+.todo-input-grid{
+    margin-bottom: 10px;
+    align-items: stretch;
+
+}
+.name-input, .due-date-input{
+    font-size: 15px;
+    padding: 6px;
+}
+.main h3{
+    color: white;
+    text-align: center;
+}
+.display-todo-grid{
+    
+    padding: 5px;
+    border-radius: 5px;
+}
+.SN{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: rgb(43, 43, 43);
+}
+input{
+    border:none;
+    border-right: 1px solid black;
+}
+.display-todo-grid-sn{
+    border-right: 1px solid white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 7px;
+}
+.display-todo-grid{
+    border-right: 1px solid white;
+}

@@ -1,0 +1,57 @@
+body {
+    background-color: #000;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .heading {
+    margin-left: 50px;
+    font-size: 40px;
+  }
+  
+  .images-select {
+    display: flex;
+  }
+  .img-sel:hover {
+    cursor: pointer;
+  }
+  .images {
+    text-align: center;
+    margin: 10px;
+  }
+  .result {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .img-sel {
+    height: 50px;
+    width: 50px;
+    border: 3px solid white;
+    padding: 20px;
+    border-radius: 100px;
+    padding: 30px;
+  }
+  .result-move {
+    border: none;
+    height: 50px;
+  }
+  .score {
+    margin-top: 40px;
+    font-size: larger;
+  }
+  button {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50px;
+  }
+  .result-wrapper{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .result-wrapper .results .result, .playerCompMove,.score{
+    text-align: center;
+  }

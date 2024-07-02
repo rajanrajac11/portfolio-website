@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link
+      rel="stylesheet"
+      href="mini-projects-style/10-rock-paper-scissors.css"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <p class="heading">Rock-Paper-Scissors</p>
+      <div class="images-select">
+        <div class="images">
+          <img
+            src="images/Rock-emoji.png"
+            alt=""
+            onclick="playerCompCheck('Rock')"
+            class="img-sel"
+          />
+        </div>
+        <div class="images">
+          <img
+            src="images/Paper-emoji.png"
+            alt=""
+            onclick="playerCompCheck('Paper')"
+            class="img-sel"
+          />
+        </div>
+        <div class="images">
+          <img
+            src="images/Scissors-emoji.png"
+            alt=""
+            onclick="playerCompCheck('Scissors')"
+            class="img-sel"
+          />
+        </div>
+      </div>
+      <div class="result-wrapper">
+        <div class="resuts">
+          <p class="result"></p>
+          <p class="playerCompMove"></p>
+          <p class="score"></p>
+          <button
+            onclick="score.lost=0;
+      score.win=0;
+      score.tie=0;
+      score.loss=0;
+      document.querySelector('.score').innerHTML=`Wins:${score.win}, Losses:${score.loss}, Ties:${score.tie}`;
+      localStorage.removeItem('score');
+      "
+          >
+            Reset Score
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="mini-projects-scripts/10-rock-paper-scissors.js"></script>
+  </body>
+</html>

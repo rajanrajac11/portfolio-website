@@ -1,36 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rajan's Website</title>
-    <link rel="stylesheet" href="style2.css">
-</head>
-<body>
-    <div class="nav-container">
-        <nav>
-            <div class="parts">
-                <a href="index.html"><img src="images/logo.png" alt="" class="logo"></a>
-            </div>
-            <div class="parts">
-                <ul>
-                    <li><a href="index.html">Home Page</a></li>
-                    <li><a href="about.html">About Myself</a></li>
-                    <li><a href="contactme.html">Contact Me</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-    <div class="home-body">
-        <div class="text">
-            Developer.
-            <h3 class="intro">Hi, I am Rajan Raj Acharya from Nepal.</h3>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rajan</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png  " />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alatsi"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="main" id="home">
+      <nav>
+        <div class="logo">
+          <a href="">𝑹ajan</a>
         </div>
-        <div class="home-image">
-            <img src="images/background.jpg" alt="" class="about-image">
+        <div class="nav-items">
+          <a
+            href="index.html"
+            class="nav-link-active nav-home"
+            onclick="toggleNavItems('.nav-home')"
+            ><span id="home-logo"
+              ><i class="fa fa-home" style="font-size: 24px"></i></span
+            >Home</a
+          >
+
+          <a
+            href="#about-container"
+            class="nav-right-items nav-about"
+            onclick="toggleNavItems('.nav-about')"
+            ><i class="fa fa-user"></i>About</a
+          >
+
+          <a
+            href="#portfolio"
+            class="nav-right-items nav-portfolio"
+            onclick="toggleNavItems('.nav-portfolio')"
+            >Portfolio</a
+          >
+
+          <a
+            href="#contact"
+            id=""
+            class="nav-right-items nav-contact"
+            onclick="toggleNavItems('.nav-contact')"
+            >ContactMe</a
+          >
         </div>
+      </nav>
+      <div class="home-body">
+        <div class="home-text">
+          <span
+            ><h3>
+              Hello! <br />
+              I am <span>Rajan Raj Acharya</span>. I'm a Web Developer.
+            </h3></span
+          >
+        </div>
+        <div class="home-photo">
+          <div><img src="images/background.jpg" alt="" /></div>
+        </div>
+      </div>
     </div>
 
-    
-</body>
+    <!---------------About Me Section----------------->
+    <section class="about-section" id="about-container">
+      <div class="about-container">
+        <div class="about-text-wrapper">
+          <h3>About Me</h3>
+          <p>
+            I am a young man of 19 years old having active habits. Currently I
+            am studying software engineering at
+            <a href="https://ncit.edu.np/" style="color: white" target="_blank"
+              >NCIT</a
+            >
+            which is located in Balkumari, Lalitpur.
+          </p>
+        </div>
+        <div class="about-links-wrapper">
+          <div class="skills">
+            <h3>Skills</h3>
+            <div class="skills-titles">
+              <ul>
+                <li>C</li>
+                <li>C++</li>
+                <li>JavaScript</li>
+                <li>HTML and CSS</li>
+                <li>GitHub</li>
+              </ul>
+            </div>
+          </div>
+          <div class="education">
+            <h3>Education</h3>
+            <div class="education-titles">
+              <ul>
+                <li>
+                  Up to 10 from<a
+                    href="https://www.facebook.com/machhapuchhreschool/"
+                    style="margin-left: 5px; color: white"
+                    target="_blank"
+                    >SMPSS</a
+                  >
+                </li>
+                <li>
+                  +2 Science from<a
+                    href="https://kumudinihomes.edu.np/"
+                    target="_blank"
+                    style="margin-left: 5px; color: white"
+                    >KHSS</a
+                  >
+                </li>
+                <li>Bachelors in Software Engineering(Present)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="experience">
+            <h3>Experience</h3>
+            <div class="experiences-titles">
+              <ul>
+                <li>3 days Hackathon at NCIT</li>
+                <li>1 Day GitHub Workshop at NCIT</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="portfolio">
+      <div class="portfolio-contents">
+        <h1><em>Portfolio</em></h1>
+        <h2>Checkout My latest Works:</h2>
+        <div class="projects-wrapper">
+          <div class="rock-paper-scissors">
+            <div class="projects-box">
+              <a
+                href="mini-projects/10-rock-paper-scissors.html"
+                target="_blank"
+                ><img src="images/rock-p-s.png" alt=""
+              /></a>
+            </div>
+            <h4>Rock-Paper-Scissors</h4>
+          </div>
+          <div class="todoList">
+            <div class="projects-box">
+              <a href="mini-projects/11-todo-list.html" target="_blank"
+                ><img src="images/todo.png" alt=""
+              /></a>
+            </div>
+
+            <h4>TODO List</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="contact-container">
+        <div class="contact-items">
+          <div class="contact-left">
+            <div class="contact-left-items">
+              <div class="lets-connect">
+                <h3>Lets Connect</h3>
+              </div>
+              <div class="social-media-links">
+                <a href="https://www.facebook.com/razanraz.acharya"
+                  ><i class="fa fa-facebook-square" style="font-size: 24px"></i
+                ></a>
+                <a href="https://www.instagram.com/rajanrajac11/"
+                  ><i class="fa fa-instagram" style="font-size: 24px"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/rajan-raj-acharya-29283a2a4/"
+                  ><i class="fa fa-linkedin" style="font-size: 24px"></i
+                ></a>
+                <a href="https://github.com/rajanrajac11"
+                  ><i class="fa fa-github" style="font-size: 24px"></i
+                ></a>
+              </div>
+              <div class="address">
+                <div class="addresstitle">Address</div>
+                <div class="addressname">
+                  Machhapuchhre-2,Bhurjungkhola, Kaski
+                </div>
+              </div>
+              <div class="mymail">
+                <div class="emailtitle">Email</div>
+                <div class="mailname">acharyarajan07 @gmail.com</div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form action="" method="">
+              <div class="full-name">
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Enter Your Full Name."
+                />
+              </div>
+              <div class="email">
+                <input
+                  type="email"
+                  name=""
+                  id=""
+                  placeholder="Enter Your Mail"
+                />
+              </div>
+
+              <div class="phone-no">
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Enter Your Phone Number"
+                />
+              </div>
+              <div class="Subject">
+                <input type="text" name="" id="" placeholder="Enter Subject" />
+              </div>
+              <div class="message">
+                <textarea
+                  name=""
+                  id=""
+                  placeholder="Enter message here"
+                  number="100"
+                ></textarea>
+              </div>
+              <input type="submit" name="" id="" value="submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-wrapper">
+        Copyright &copy; 2024
+        <a href="index.html">Rajan Raj Acharya.</a> All Rights Reserved
+      </div>
+    </footer>
+  </body>
+  <script src="scripts/index-script.js"></script>
 </html>
