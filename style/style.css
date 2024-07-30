@@ -140,6 +140,10 @@ i{
     box-shadow:2px 10px 20px grey;
     
 }
+.about-container:hover{
+    transform:scale(1.01);
+
+}
 
 .about-text-wrapper{
     color: white;

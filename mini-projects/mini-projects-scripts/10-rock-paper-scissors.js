@@ -7,6 +7,30 @@ let score = JSON.parse(localStorage.getItem("score")) || {
 document.querySelector(
   ".score"
 ).innerHTML = `Wins: ${score.win}, Losses: ${score.lost}, Ties: ${score.tie}`;
+
+
+// Code for auto playing 
+isPlayingAuto = false;
+let intervalId ;
+function playAuto(){
+  const autoElement = document.querySelector('#js-auto-play');
+  if(!isPlayingAuto){
+    isPlayingAuto = true;
+    intervalId = setInterval(function(){
+      playerMove = pickComputerMove();
+      playerCompCheck(playerMove);
+
+    }, 1000);
+    autoElement.innerHTML = "Stop Play";
+  }
+  else{
+    isPlayingAuto = false;
+    clearInterval(intervalId);
+    autoElement.innerHTML = "Auto Play";
+  }
+}
+
+
 function playerCompCheck(playerMove) {
   let computerMove = pickComputerMove();
   if (playerMove === "Rock") {
